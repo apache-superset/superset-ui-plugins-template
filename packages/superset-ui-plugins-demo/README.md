@@ -1,9 +1,9 @@
 ## @superset-ui/demo
 
-[![David (path)](https://img.shields.io/david/apache-superset/superset-ui-plugins.svg?path=packages%2Fsuperset-ui-demo&style=flat-square)](https://david-dm.org/apache-superset/superset-ui-plugins?path=packages/superset-ui-demo)
+[![David (path)](https://img.shields.io/david/apache-superset/superset-ui-plugins-template.svg?path=packages%2Fsuperset-ui-demo&style=flat-square)](https://david-dm.org/apache-superset/superset-ui-plugins-template?path=packages/superset-ui-demo)
 
-Storybook of `@superset-ui-plugins` packages. See it live at
-[apache-superset.github.io/superset-ui-plugins](https://apache-superset.github.io/superset-ui-plugins)
+Storybook of `@superset-ui-plugins-template` packages. See it live at
+[apache-superset.github.io/superset-ui-plugins-template](https://apache-superset.github.io/superset-ui-plugins-template)
 
 ### Development
 
@@ -11,9 +11,9 @@ Storybook of `@superset-ui-plugins` packages. See it live at
 
 To view the storybook locally, you should:
 
-1. Clone [superset-ui-plugins](https://github.com/apache-superset/superset-ui-plugins) repo.
-2. Run `yarn install && yarn build` in the `superset-ui-plugins` root directory.
-3. Change to the demo directory `cd packages/superset-ui-plugins-demo`.
+1. Clone [superset-ui-plugins-template](https://github.com/apache-superset/superset-ui-plugins-template) repo.
+2. Run `yarn install && yarn build` in the `superset-ui-plugins-template` root directory.
+3. Change to the demo directory `cd packages/superset-ui-plugins-template-demo`.
 4. Run `yarn run storybook`.  This will open up a dev server at http://localhost:9001.
 
 #### Adding new stories

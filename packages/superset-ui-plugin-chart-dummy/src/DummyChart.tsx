@@ -27,6 +27,12 @@ export default class DummyChart extends React.PureComponent<DummyChartProps> {
   render() {
     const { height, width } = this.props;
 
-    return <div style={{ height, width, backgroundColor: '#ffe459' }}>Example!</div>;
+    return (
+      <svg style={{ height, width, backgroundColor: '#ffe459', borderRadius: 8 }}>
+        <text x={width / 2} y={height / 2} textAnchor="middle" fontWeight="bold" fontSize="36">
+          Example
+        </text>
+      </svg>
+    );
   }
 }

@@ -16,7 +16,6 @@ export default [
           dateTimeFormat: '%Y-%m-%d',
           numberFormat: '.3s',
           richTooltip: true,
-          roseAreaProportion: false,
         }}
       />
     ),
