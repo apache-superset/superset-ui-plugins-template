@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -21,16 +22,27 @@ import React from 'react';
 export type DummyChartProps = {
   height: number;
   width: number;
+  data: { x: number; y: number }[];
 };
 
 export default class DummyChart extends React.PureComponent<DummyChartProps> {
   render() {
-    const { height, width } = this.props;
+    const { data, height, width } = this.props;
 
     return (
-      <svg style={{ height, width, backgroundColor: '#ffe459', borderRadius: 8 }}>
+      <svg style={{ backgroundColor: '#ffe459', borderRadius: 8, height, width }}>
+        {data.map(({ x, y }) => (
+          <circle
+            key={[x, y].join('-')}
+            cx={x * width}
+            cy={y * height}
+            r={Math.random() * 20}
+            fill="#fff"
+            opacity="0.5"
+          />
+        ))}
         <text x={width / 2} y={height / 2} textAnchor="middle" fontWeight="bold" fontSize="36">
-          Example
+          Hello!
         </text>
       </svg>
     );

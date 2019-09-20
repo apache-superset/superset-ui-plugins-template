@@ -20,12 +20,14 @@ import { ChartProps } from '@superset-ui/chart';
  */
 /* eslint-disable sort-keys */
 export default function transformProps(chartProps: ChartProps) {
-  const { width, height, formData } = chartProps;
+  const { width, height, formData, queryData } = chartProps;
   const { color } = formData;
+  const { data } = queryData;
 
   return {
     width,
     height,
     color,
+    data,
   };
 }

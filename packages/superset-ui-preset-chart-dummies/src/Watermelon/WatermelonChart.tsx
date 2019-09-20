@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -19,14 +20,32 @@
 import React from 'react';
 
 export type WatermelonChartProps = {
+  data: { x: number }[];
   height: number;
   width: number;
 };
 
 export default class WatermelonChart extends React.PureComponent<WatermelonChartProps> {
   render() {
-    const { height, width } = this.props;
+    const { data, height, width } = this.props;
 
-    return <div style={{ height, width, backgroundColor: '#005f00' }}>Watermelon</div>;
+    return (
+      <svg style={{ backgroundColor: '#005f00', borderRadius: 8, height, width }}>
+        {data.map(({ x }, i) => (
+          <rect
+            // eslint-disable-next-line react/no-array-index-key
+            key={`rect-${i}`}
+            x={(width / 10) * i + 5}
+            width={x * 20 + 10}
+            height={height}
+            fill="#fff"
+            opacity="0.25"
+          />
+        ))}
+        <text x={width / 2} y={height / 2} textAnchor="middle" fontWeight="bold" fontSize="36">
+          Watermelon
+        </text>
+      </svg>
+    );
   }
 }
