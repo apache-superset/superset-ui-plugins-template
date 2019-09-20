@@ -1,4 +1,4 @@
-# @superset-ui/plugins 🔌💡
+# @superset-ui/plugins-template 🔌💡
 
 [![Codecov branch](https://img.shields.io/codecov/c/github/apache-superset/superset-ui-plugins-template/master.svg?style=flat-square)](https://codecov.io/gh/apache-superset/superset-ui-plugins-template/branch/master)
 [![Build Status](https://img.shields.io/travis/com/apache-superset/superset-ui-plugins-template/master.svg?style=flat-square
