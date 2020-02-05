@@ -18,7 +18,6 @@ import { ChartProps } from '@superset-ui/chart';
  * specific language governing permissions and limitations
  * under the License.
  */
-/* eslint-disable sort-keys */
 export default function transformProps(chartProps: ChartProps) {
   const { width, height, formData, queryData } = chartProps;
   const { color } = formData;
