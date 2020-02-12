@@ -95,9 +95,6 @@
         "useBuiltIns": "usage"
       }
     },
-    "babel": {
-      "plugins": [["@babel/plugin-transform-runtime", { "corejs": 3 }]]
-    },
     "jest": {
       "timers": "real",
       "setupFilesAfterEnv": [
